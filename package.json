@@ -1,6 +1,6 @@
 {
   "name": "loader-core",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "A minimum loader for JS in browsers",
   "main": "index.js",
   "devDependencies": {
