@@ -205,6 +205,7 @@ module.exports = Loader
 ## TODO
 
 * 创建开发新加载器的脚手架
+* 加上`Promise`的polyfill
 
 [`loader-css`]: https://github.com/loaderjs/loader-css
 [`browserify`]: https://github.com/substack/node-browserify
