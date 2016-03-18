@@ -1,0 +1,32 @@
+{
+  "name": "loader-core",
+  "version": "0.0.1",
+  "description": "A minimum loader for JS in browsers",
+  "main": "index.js",
+  "devDependencies": {
+    "eslint": "^2.4.0",
+    "tape": "^4.5.1",
+    "browserify": "^13.0.0",
+    "uglify-js": "^2.6.2"
+  },
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint *.js 'lib/**/*.js' test/*.js bin/*.js",
+    "test-browser": "browserify test/*.js > test/fixtures/bundle.js && open test/fixtures/index.html",
+    "dist": "browserify index.js --standalone Loader | tee dist/loader.js | uglifyjs -m > dist/loader.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/loaderjs/loader-core.git"
+  },
+  "keywords": [
+    "loader",
+    "browser"
+  ],
+  "author": "zoubin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/loaderjs/loader-core/issues"
+  },
+  "homepage": "https://github.com/loaderjs/loader-core#readme"
+}
